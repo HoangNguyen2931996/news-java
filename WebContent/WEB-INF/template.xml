@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <!-- ADMIN TEMPLATE -->
+  <definition name="news.admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="left_bar" value="/WEB-INF/templates/admin/left_bar.jsp" />
+    <put-attribute name="right_bar" value="/WEB-INF/templates/admin/right_bar.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  <definition name="admin.cat.index" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/index.jsp" />
+  </definition>
+  <definition name="admin.cat.add" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/add.jsp" />
+  </definition>
+  <definition name="admin.cat.edit" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/edit.jsp" />
+  </definition>
+  <definition name="admin.resource.index" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/resource/index.jsp" />
+  </definition>
+  <definition name="admin.resource.add" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/resource/add.jsp" />
+  </definition>
+  <definition name="admin.resource.edit" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/resource/edit.jsp" />
+  </definition>
+  <definition name="admin.link.index" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/link/index.jsp" />
+  </definition>
+  <definition name="admin.link.add" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/link/add.jsp" />
+  </definition>
+  <definition name="admin.link.edit" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/link/edit.jsp" />
+  </definition>
+  <definition name="admin.news.index" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/news/index.jsp" />
+  </definition>
+  <definition name="admin.autoupdate.add" extends="news.admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/autoupdate/add.jsp" />
+  </definition>
+</tiles-definitions>
